@@ -112,7 +112,6 @@ p {
 }
 
 .menu {
-  width 50%;
   display: block;
 }
 
@@ -122,13 +121,13 @@ p {
   position: relative;
 }
 
- .cards p {
+.cards p {
    position: absolute;
    width: 100%;
    text-align: center;
    top: 50%;
    transform: translateY(-50%);
- }
+}
 
 
 @media only screen and (min-width: 25em) {
@@ -226,13 +225,13 @@ p {
 
   nav li {
     text-align: right;
-    }
+  }
 
   h1,
   nav {
     display: inline-block;
     vertical-align: middle;
-    }
+  }
 
   h1 {
     margin-bottom: 0;
@@ -244,12 +243,12 @@ p {
     line-height: 1.5;
   }
 
-  .card-body {
+  .card-bod {
     font-size: 2.5rem;
-
-}
+  }
 
   .cards {
     width: 25%;
     display: inline-block;
   }
+}
