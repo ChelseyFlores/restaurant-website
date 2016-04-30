@@ -42,7 +42,8 @@ h1 {
 }
 
 h2 {
-  font-family: "Dancing script"
+  font-family: "Dancing script";
+  color: #fff;
 }
 
 nav ul {
@@ -71,6 +72,8 @@ nav a:hover {
 .img-flex {
   display: block;
   width: 100%;
+  padding: 0;
+  margin: 0;
 }
 
 .banner {
@@ -81,7 +84,7 @@ nav a:hover {
   position: relative;
 }
 
-.card-title {
+.card {
   width: 100%;
   margin: 0;
   padding: .2em;
@@ -103,20 +106,30 @@ nav a:hover {
   transform: translate(-50%, -50%);
 }
 
-span {
-  display: inline;
-  background-color: rgba(255,255,255,0.4);
-  border-radius: 10px
-}
-
 p {
   margin: 0;
+  color: #fff;
+}
+
+.menu {
+  width 50%;
+  display: block;
 }
 
 .cards {
   display: inline-block;
   width: 100%;
+  position: relative;
 }
+
+ .cards p {
+   position: absolute;
+   width: 100%;
+   text-align: center;
+   top: 50%;
+   transform: translateY(-50%);
+ }
+
 
 @media only screen and (min-width: 25em) {
   nav li {
@@ -147,9 +160,8 @@ p {
     line-height: 1.4;
   }
 
-  img {
-    width: 33%;
-    display: inline-block;
+  .cards {
+    width: 48%;
   }
 
   .card-title {
@@ -200,6 +212,12 @@ p {
 
 }
 
+.cards {
+  float: left;
+  width: 25%;
+}
+
+
 @media only screen and (min-width: 90em) {
   html {
     font-size: 130%;
@@ -231,7 +249,7 @@ p {
 
 }
 
-  img {
+  .cards {
     width: 25%;
     display: inline-block;
   }
